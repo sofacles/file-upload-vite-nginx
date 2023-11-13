@@ -1,6 +1,8 @@
 import "./App.css";
 
 function App() {
+  // the action fieldin the form below needs a full url on my dev machine.
+  // nginx magic maps "/api" for me on the deployment server.
   return (
     <div>
       <img
@@ -10,11 +12,12 @@ function App() {
       />
       <form
         method="post"
-        action="http://localhost:8888/api"
+        action="/api"
         name="give-away-paint"
         encType="multipart/form-data"
       >
-        <input type="file" name="fileX" />
+        <input type="text" name="imageName" value="myNewImage" />
+        <input type="file" name="uploadPhoto" />
         <input type="submit" value="Submit" />
       </form>
     </div>
