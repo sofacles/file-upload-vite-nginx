@@ -12,7 +12,7 @@ app.get("/", (_: Request, res: Response) => {
   res.send("Express + TypeScript Server");
 });
 
-app.post("/api/pics", (req: Request, res: Response) => {
+app.post("/api", (req: Request, res: Response) => {
   req.on("data", (data: any) => {
     Logger.info(
       `At ${new Date().toLocaleString()}, we got a chunk of a file with length: ${

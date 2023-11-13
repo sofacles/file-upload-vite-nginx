@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import "./App.css";
 
 function App() {
@@ -12,7 +10,7 @@ function App() {
       />
       <form
         method="post"
-        action="http://localhost:8888/api/pics"
+        action="/api"
         name="give-away-paint"
         encType="multipart/form-data"
       >
