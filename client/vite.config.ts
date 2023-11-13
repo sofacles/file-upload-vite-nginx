@@ -7,7 +7,7 @@ export default defineConfig({
   publicDir: "../server/public",
   server: {
     proxy: {
-      "/server/": "http://localhost:8888/",
+      "/api/": "http://localhost:8888/",
     },
   },
 });

@@ -10,7 +10,7 @@ function App() {
       />
       <form
         method="post"
-        action="/api"
+        action="http://localhost:8888/api"
         name="give-away-paint"
         encType="multipart/form-data"
       >
