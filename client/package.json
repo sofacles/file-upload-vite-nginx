@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "both": "concurrently --kill-others-on-fail \"npm run server\" \"npm run dev\"",
     "both:prod": "concurrently --kill-others-on-fail \"npm run server:prod\" \"npm run preview\"",
-    "server": "cd ../server && npm run dev"
+    "server": "cd ../server && npm run dev",
+    "server:prod": "cd ../server && npm run start:prod"
   },
   "dependencies": {
     "concurrently": "^8.2.2",
