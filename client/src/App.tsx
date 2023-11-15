@@ -4,6 +4,9 @@ import "./App.css";
 
 export type UploadPhotoType = { preview: string; data: File | null };
 
+//const baseServerUrl = "http://localhost:8888";
+const baseServerUrl = "/api";
+
 function App() {
   // the action fieldin the form below needs a full url on my dev machine.
   // nginx magic maps "/api" for me on the deployment server.
@@ -32,7 +35,7 @@ function App() {
   return (
     <div>
       <img
-        src={`http://localhost:8888/${imageUrl}`}
+        src={`${baseServerUrl}/${imageUrl}`}
         alt="greenfield"
         style={{ height: "100px", width: "140px" }}
       />
