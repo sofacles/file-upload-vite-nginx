@@ -2,3 +2,4 @@ node_modules
 logs
 deployment
 server/build
+.DS_Store
